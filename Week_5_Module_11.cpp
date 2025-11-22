@@ -19,7 +19,7 @@ public:
 };
 
 int main() {
-    Product p(101, "Notebook", 4.99);
+    Product p(88, "Mechanical Pencil", 4.99);
     p.printDetails();
     return 0;
 }
