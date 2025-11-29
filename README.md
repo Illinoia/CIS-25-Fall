@@ -6,3 +6,8 @@ The loop continues until arr[mid].id == searchid. If left > right, it means that
 In main, the program creates a new array Item called items with 100 entries.
 Then it populates the array with id from 1 to 100 and name from Item1 to Item100.
 Then it sorts the data by name using the sort function.
+The program will ask for user input "Enter an ID to search for (1-100): " and stores the user input in an int variable userid.
+Then it will call the binary search function to find the entry with the same id as userid and stores the data in an int variable result.
+If result does not equal to -1, the program will output "Item found. ID: (ID of item). Name: (name of item).". If the result equals -1, the program will output "Item not found".
+Then the program will free the memory using delete[].
+The program returns 0.
