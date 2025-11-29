@@ -18,12 +18,15 @@ int binarySearch(Item arr[], int size, int searchid) {
 	while (left <= right) {
 		int mid = left + (right - left) / 2;
 
-		if (arr[mid].id == searchid)
+		if (arr[mid].id == searchid) {
 			return mid;
-		else if (arr[mid].id < searchid)
+		}
+		else if (arr[mid].id < searchid) {
 			left = mid + 1;
-		else
+		}
+		else {
 			right = mid - 1;
+		}
 	}
 	return -1;
 }
@@ -60,4 +63,5 @@ int main() {
 	delete[] items;
 
 	return 0;
+
 }
